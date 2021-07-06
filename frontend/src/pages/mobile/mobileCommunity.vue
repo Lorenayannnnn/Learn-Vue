@@ -1,13 +1,17 @@
 <template>
   <div>
-    Pc Home
+    <h1 style="margin-top: 0;">Community</h1>
+    <div>
+
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "pcHome"
+  name: "mobileCommunity"
 }
+
 </script>
 
 <style scoped>

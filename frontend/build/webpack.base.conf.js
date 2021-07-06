@@ -12,6 +12,7 @@ function resolve (dir) {
 
 module.exports = {
   context: path.resolve(__dirname, '../'),
+  // 打包出入口
   entry: {
     app: './src/main.js'
   },
@@ -22,11 +23,14 @@ module.exports = {
       ? config.build.assetsPublicPath
       : config.dev.assetsPublicPath
   },
+  // 为了用runtime-compiler (允许有template) 而非runtime-only build of Vue
   resolve: {
     extensions: ['.js', '.vue', '.json'],
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
       '@': resolve('src'),
+      'assets': resolve('@/assets'),
+      'components': resolve('@/components')
     }
   },
   module: {

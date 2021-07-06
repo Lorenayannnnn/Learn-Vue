@@ -1,15 +1,15 @@
 <template>
   <div>
-    mobile home
+    All news
   </div>
 </template>
 
 <script>
 export default {
-  name: "mobileHome"
+  name: "News"
 }
 </script>
 
-<style scoped lang="less">
+<style scoped>
 
 </style>

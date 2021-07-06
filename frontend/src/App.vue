@@ -11,11 +11,11 @@ export default {
     var isMobile = this._isMobile()
     if (isMobile) {
       if (!this.$router.currentRoute.path.includes('mobile')) {
-        this.$router.replace('/mobile/home');
+        this.$router.replace('/mobile/login');
       }
-    } else if (!isMobile) {
-      if (!this.$router.currentRoute.path.includes('pc')) {
-        this.$router.replace('/pc/home');
+    } else {
+      if (!this.$route.path.indexOf('pc') <= -1) {
+        this.$router.replace('/pc/home/home');
       }
     }
   },
