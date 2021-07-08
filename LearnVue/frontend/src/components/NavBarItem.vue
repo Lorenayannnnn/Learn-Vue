@@ -19,9 +19,6 @@ export default {
       default: 'blueviolet'
     }
   },
-  mounted() {
-
-  },
   computed: {
     isActive () {
       return this.$route.path.indexOf(this.link) !== -1;

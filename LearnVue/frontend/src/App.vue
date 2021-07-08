@@ -10,7 +10,7 @@ export default {
   mounted() {
     var isMobile = this._isMobile()
     if (isMobile) {
-      if (!this.$router.currentRoute.path.includes('mobile')) {
+      if (!this.$router.currentRoute.path.indexOf('mobile') <= -1) {
         this.$router.replace('/mobile/login');
       }
     } else {
