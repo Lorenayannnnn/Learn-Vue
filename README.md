@@ -1,6 +1,14 @@
 # Learn Vue
 
 ## LearnVue:
+1. Vue Basics
+2. Vue Component：extend & Component Registration，Parent/Child component communication，V-slot
+3. Webpack + Vue CLI
+4. Vue Router：Router basics, Dynamic routing, Lazy loading, Passing parameters while routing, Navigator, keep-alive
+6. JS ES6: Promise + Axios (Web Request Encapsulation)
+7. Vuex
+
+## LearnVue:
 1. Vue基础
 2. 组件化：extend&注册组件，父子组件通信，插槽使用
 3. Webpack + Vue CLI
